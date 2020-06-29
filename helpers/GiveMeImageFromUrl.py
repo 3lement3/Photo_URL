@@ -20,6 +20,13 @@ class GiveMeImageFromUrl:
 
     def get_img_from_url(self):
         BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # Основной путь
+        path = 'media'
+        try:
+            os.mkdir(path)
+        except OSError:
+            print(f'Создать директорию {path} не удалось')
+        else:
+            print(f'Успешно создана директория {path}')
         dir = os.path.join(BASE_DIR, 'media\example.jpg')  # Путь до файла
         print('===')
         print(dir)  # Путь куда ляжет файл
