@@ -7,6 +7,7 @@
 
 #### Start
 ```
+- https://github.com/3lement3/example.git
 - python -m venv venv
 - pip install -r requirements.txt
 - python main.py
